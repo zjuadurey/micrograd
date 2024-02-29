@@ -5,7 +5,7 @@ class Value:
     def __init__(self, data, _children=(), _op=''):
         self.data = data
         self.grad = 0
-        print("It's a rebuild of micrograd")
+        
         self._backward = lambda: None
         self._prev = set(_children)
         self._op = _op
